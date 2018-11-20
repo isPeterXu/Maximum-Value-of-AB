@@ -7,6 +7,7 @@ Let S[n] denote the maximum value of a[i]*b[j] which can be achieved using first
 such that no consecutive k numbers are selected. 
 
 Class MaxValue
+
 This class only have one method
 
 Method getMaxSum(int[] a, int k)
