@@ -7,6 +7,8 @@ public class Main {
         int n = 4; //the number of neighbors n > 0
         int k = 2; //at most k adjacent neighbors
         int boundLength = 10; // upper bound of the value of a[i]
+
+        //create a random a[]
         int[] a = new int[n];
         Random random = new Random();
         for (int i = 0; i < a.length; i++) {
@@ -18,11 +20,9 @@ public class Main {
             System.out.println(e);
         }
 
-        MaxValue maxValue = new MaxValue();
-        //long startTime = System.currentTimeMillis();
+        MaxValue maxValue = new MaxValue(); // instance maxValue
         long startTime = System.nanoTime();
         int Max = maxValue.getMaxSum(a,k); // Max = SumArray[n-1]
-        //long endTime = System.currentTimeMillis();
         long endTime = System.nanoTime();
         System.out.println("Maximum Value: " + Max);
         System.out.println("Elapsed time: " + (endTime - startTime) + "ns");
